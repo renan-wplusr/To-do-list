@@ -10,7 +10,7 @@ function Tasks({ tasks, onClickTask, OnDeleteTask }) {
     navigate(`/task?${query.toString()}`);
   }
   return (
-    <ul className="space-y-4 p-6 bg-pink-100 rounded-md w-500 shadow">
+    <ul className="space-y-4 p-6 bg-pink-100 rounded-md w-96 custom-max-w  shadow">
       {tasks.map((task) => (
         <li key={task.id} className="flex gap-1">
           <button
@@ -38,5 +38,6 @@ function Tasks({ tasks, onClickTask, OnDeleteTask }) {
     </ul>
   );
 }
+
 
 export default Tasks;
