@@ -38,10 +38,12 @@ function App() {
     setTasks(nTasks);
   }
 
-  return (
-    <div className="w-full h-screen bg-black justify-center flex ">
-      <div className="w-auto h-full">
-        <h1 className="text-pink-200 text-6xl font-bold ">Tarefas a fazer!</h1>
+ return (
+    <div className="w-full min-h-screen h-screen bg-black justify-center flex flex-col">
+      <div className="w-[100%] h-screen flex flex-col items-center justify-center flex-grow">
+        <h1 className="text-pink-200 text-6xl font-bold whitespace-nowrap custom-h1">
+          Tarefas a fazer!
+        </h1>
         <AddTasks onAddTaskSubmit={onAddTaskSubmit} />
 
         <Tasks
@@ -50,6 +52,7 @@ function App() {
           OnDeleteTask={OnDeleteTask}
         />
       </div>
+      <Footer />
     </div>
   );
 }
