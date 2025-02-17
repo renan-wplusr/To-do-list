@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AddTasks from "./AddTasks";
-import Tasks from "./Tasks";
+import Tasks from "./Tasks"; 
+import Footer from "./Footer";
 import { v4 } from "uuid";
 
 function App() {
